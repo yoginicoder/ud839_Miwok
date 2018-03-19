@@ -7,13 +7,11 @@ import android.view.LayoutInflater;
 import android.widget.ArrayAdapter;
 import android.view.ViewGroup;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by gp on 14/03/2018.
- */
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
@@ -37,7 +35,14 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultTextView.setText(currentWord.getDefaultTranslation());
 
-
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        if(currentWord.hasImage()) {
+            imageView.setImageResource(currentWord.getImageRescourceId());
+            // views get reused, so set the other case as well
+            imageView.setVisibility(View.VISIBLE);
+        } else {
+            imageView.setVisibility(View.GONE);
+        }
         return listItemView;
     }
 }

@@ -39,7 +39,7 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word("Yes, I'm coming", "hәә’ әәnәm"));
         words.add(new Word("I'm coming", "әәnәm"));
         words.add(new Word("Let's go", "yoowutis"));
-        words.add(new Word("Come here", "әnni'nem\n"));
+        words.add(new Word("Come here", "әnni'nem"));
 
         WordAdapter adapter = new WordAdapter (this, words);
 
