@@ -15,19 +15,26 @@ public class Word {
     //image relating to text
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
+    private int mAudioResourceId;
+
     //Lesson 7.13 image existence variable
     private static int NO_IMAGE_PROVIDED = -1;
 
-    // create Word object
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
+
+
+    // create Word object for 4 types of data
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation) {
+    // create a second Word object for 3 types of data
+    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResourceId = audioResourceId;
     }
 
     //get default translation
@@ -50,6 +57,9 @@ public class Word {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
+    public int getAudioResourceId(){
+        return mAudioResourceId;
+    };
 
 }
 
