@@ -77,6 +77,16 @@ public class NumbersActivity extends AppCompatActivity {
     }
 
     /**
+     * Set app sounds to stop playing as soon as we navigate away from the app
+     * Doesn't seem to work for Numbers?
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+    }
+
+    /**
      * Clean up the media player by releasing its resources.
      */
     private void releaseMediaPlayer() {

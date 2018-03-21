@@ -70,6 +70,15 @@ public class FamilyActivity extends AppCompatActivity {
         });
     }
     /**
+     * Set app sounds to stop playing as soon as we navigate away from the app
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+    }
+
+    /**
      * Clean up the media player by releasing its resources.
      */
     private void releaseMediaPlayer() {
