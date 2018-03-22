@@ -20,28 +20,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/miwok_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="bottom"
-        android:textStyle="bold"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        tools:text="lutti"/>
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            tools:text="lutti"/>
 
-    <TextView
-        android:id="@+id/default_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textAppearance="?android:textAppearanceMedium"
-        tools:text="one"/>
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="one"/>
 
     </LinearLayout>
 
