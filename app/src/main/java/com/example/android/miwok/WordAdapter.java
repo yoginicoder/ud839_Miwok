@@ -1,6 +1,9 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.view.LayoutInflater;
 import android.widget.ArrayAdapter;
 import android.view.ViewGroup;
@@ -53,3 +56,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         return listItemView;
     }
 }
+
+
+

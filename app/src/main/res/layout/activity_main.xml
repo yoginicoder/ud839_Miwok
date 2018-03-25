@@ -54,4 +54,6 @@
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_phrases" />
     </FrameLayout>
+
+
 </LinearLayout>
