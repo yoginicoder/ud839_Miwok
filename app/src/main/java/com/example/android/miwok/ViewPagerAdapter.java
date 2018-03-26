@@ -21,9 +21,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         } else if (position == 1){
             return new FamilyFragment();
         } else if (position == 2) {
-            return new ColorsFragment();
-        } else {
             return new PhrasesFragment();
+        } else {
+            return new ColorsFragment();
         }
     }
 
