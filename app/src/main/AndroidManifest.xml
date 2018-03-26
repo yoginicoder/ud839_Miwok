@@ -29,6 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- are these activites required here? -->
         <activity
             android:name=".NumbersActivity"
             android:label="@string/category_numbers"
