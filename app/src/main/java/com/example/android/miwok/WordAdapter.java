@@ -23,6 +23,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
     }
 
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
